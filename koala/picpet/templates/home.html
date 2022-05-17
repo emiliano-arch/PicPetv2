@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>PicPet</title>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="https://cdn.pixabay.com/photo/2016/03/31/17/37/animal-1293792_960_720.png"/></svg>
+            <img class="mb-4" src="https://cdn.pixabay.com/photo/2016/03/31/17/37/animal-1293792_960_720.png" alt="" width="40" height="32">
+            <span class="fs-4">PicPet</span>
+          </a>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Misión</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Visión</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">¿Quiénes somos?</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end btn-group-vertical-personalizado">
+            <a href="./login.html" class="btn btn-primary">Iniciar sesión</a>
+            <a href="{% url 'cuentas' %}" class="btn btn-primary">Registrarse</a>
+            
+            
+          </div>
+        </header>
+      </div>
+<main>
+
+  <h1 class="display-5 titulo-home" id="bienvenido" style="text-align: center;">¡Bienvenido a PicPet!</h1>
+    
+  <!-- Carrusel -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active contenedor-imagenes">
+        <img src="https://images.unsplash.com/photo-1574273443477-87bf272e5100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" class="d-block w-100" alt="Corgi" width="72" height="620">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h2>Siente a tu mascota cerca.</h2>
+            <p>Descubre las distintas formas de llevar a tu mascota contigo.</p>
+              
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80" class="d-block w-100" alt="Gato" width="72" height="620">
+    
+        <div class="container">
+          <div class="carousel-caption">
+            <h2>Haz realidad tus sueños.</h2>
+            <p>Encuentra artistas para hacer tus diseños personalizados.</p>
+              
+          </div>
+        </div>
+      </div>
+      <!-- Fin item 1 -->
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1625522129296-b0107552c21a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="Husky" width="72" height="620">
+          
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h2>Encuentra los mejores precios.</h2>
+            <p>Apoya a los alumnos de la Facultad de Artes y Diseño que comparten su talento.</p>
+              
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+  <!-- Galeria -->
+  <h2 class="text-center titulo">Proyectos</h2>
+  
+  <section class="galeria">
+    <img src="https://images.unsplash.com/photo-1592492135673-55966d3b541a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1086&q=80" alt="camisa con perrito">
+    <img src="https://images.unsplash.com/photo-1500259571355-332da5cb07aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="Foto de gato">
+    <img src="https://images.unsplash.com/photo-1525280337473-fc28bbb4129e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1179&q=80" alt="Foto de perro con joven">
+    <img src="https://images.unsplash.com/photo-1558368315-d44d7462073e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80" alt="Titere de perro">
+    <img src="https://images.unsplash.com/photo-1515222410484-613a51c43721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Pintura de Perrito antigua">
+    <img src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80" alt="Pintura de familia de gatos">
+  </section>
+
+  <!-- copy -->
+  <section class="copy">
+    <div class="copy__texts container">
+        <h2 class="titulo text-center title--margin">Hacemos tus ideas reales.</h2>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="about container">
+    <div class="about__texts">
+        <h2 class="titulo">Arte Online</h2>
+
+        <p class="about__paragraph">Somos estudiantes de la carrera de informatica de la Universidad Autonoma de México, hemos creado esta plataforma online con el objetivo de ayudar a nuestros compañeros de la facultad de Artes y diseño.</p>
+
+        <p class="about__paragraph">Otro de nuestros grandes objetivos son los consumidores de arte, de diseño y de los maravillosos compañeros peludos, en esta plataforma podras encontras muchos artistas de todo tipo de tecnicas para plasmar esos hermosos recuerdos de nuestras mascotas.</p>
+    </div>
+    <figure class="about__img">
+        <img src="assets/img/arte.svg" alt="" class="about__picture">
+    </figure>
+  </section>
+
+<!-- Cards -->
+  <h2 class="titulo" id="pasatiempos" style="text-align: center;">Animate a contratar a un artista</h2>
+  
+  <p class="text-center">Una de las cosas más importantes de una persona son sus mascota, por ello es importante llevarlo cerca de ti y nosotros tenemos la solución.</p>
+  
+  <section class="row row-cols-1 row-cols-md-3 g-4 grid-cards">
+    <!-- <div class="grid-personalizado"> -->
+      <!-- CARD 1 -->
+      <div class="col">
+    
+        <div class="card" style="width: 15rem;">
+          <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pinturas</h5>
+            <p class="card-text">Descubre las distintas técnicas de los artistas para hacer una pintura.</p>
+            
+          </div>
+        </div>
+    
+      </div>
+        <!-- FIN CARD 1 -->
+    
+        <!-- CARD 2 -->
+      <div class="col">
+    
+        <div class="card" style="width: 15rem;">
+          <img src="https://images.unsplash.com/photo-1619961534986-5064211a7227?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Carcasas</h5>
+            <p class="card-text">Adaptamos cualquier imagen a una carcasa para tu celular.</p>
+            
+          </div>
+        </div>
+    
+      </div>
+      <!-- FIN CARD 2 -->
+    
+      <div class="col">
+    
+        <div class="card" style="width: 15rem;">
+            <img src="https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dibujos</h5>
+              <p class="card-text">Encuentra a los mejores artistas que utilizan su lápiz o su tableta.</p>
+            
+            </div>
+
+        </div>
+      
+      </div>
+    
+      <div class="col">
+      
+        <div class="card" style="width: 15rem;">
+            <img src="https://images.unsplash.com/photo-1617910879258-2aff8026515d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Acuarelas</h5>
+              <p class="card-text">Te asombrarás con el trabajo final con esta tácnica de pintura.</p>
+            
+            </div>
+        </div>
+      
+      </div>
+    
+      <div class="col">
+      
+        <div class="card" style="width: 15rem;">
+          <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fotografía</h5>
+            <p class="card-text">Realiza una sesión de fotos única e inolvidable para tu mascota .</p>
+            
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="col">
+      
+        <div class="card" style="width: 15rem;">
+          <img src="https://images.unsplash.com/photo-1629757006805-993175a40171?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Artesanias</h5>
+            <p class="card-text">Moldeando los recuerdos mas preciados de nuestros compañeros peludos</p>
+            
+          </div>
+        </div>
+      
+      </div>
+
+      <!-- </div> -->
+  </section>
+    
+</main>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <footer>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; PicPet 2022</p>
+    </footer>
+  </body>
+
+</html>
